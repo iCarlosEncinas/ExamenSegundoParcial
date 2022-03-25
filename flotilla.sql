@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-03-2022 a las 06:03:37
+-- Tiempo de generación: 25-03-2022 a las 09:42:54
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.8
 
@@ -47,7 +47,7 @@ CREATE TABLE `inspecciones_unidad` (
 --
 
 INSERT INTO `inspecciones_unidad` (`id`, `id_unidad`, `id_nivel_gasolina`, `id_nivel_aceite`, `nivel_aire_chofer_delantera`, `nivel_aire_chofer_trasera`, `nivel_aire_copiloto_delantera`, `nivel_aire_copiloto_trasera`, `fecha`, `observaciones`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 1, 1, 1, 1, 1, '2022-03-01', 'nada', '2022-03-25 11:54:42', '2022-03-25 11:54:42');
+(3, 1, 4, 2, 50, 50, 50, 50, '2022-03-25', 'desde insomnia', '2022-03-25 15:31:33', '2022-03-25 15:31:33');
 
 -- --------------------------------------------------------
 
@@ -118,9 +118,9 @@ CREATE TABLE `unidades` (
 --
 
 INSERT INTO `unidades` (`id`, `codigo`, `placa`, `marca`, `modelo`, `ano`, `created_at`, `updated_at`) VALUES
-(1, '1MEBP544XDW630740', 'PLE9945', 'FORD', 'MERCURY', '2007', '2022-03-25 02:52:38', NULL),
-(2, '1080486317', 'PMA1359', 'VW', 'GOLF', '2010', '2022-03-25 02:52:38', NULL),
-(3, '3BAMB1362762', 'GGN3426', 'NISSAN', 'TSURU', '1992', '2022-03-25 02:52:38', NULL);
+(1, 'ASDAJSAS123', 'GROOVE4EVER', 'MAZDA', 'CAMRY', '2022', '2022-03-25 07:45:38', NULL),
+(2, '12938SJDLASD', 'AAAAQWER', 'FORD', 'FIESTA', '2010', '2022-03-24 07:48:21', NULL),
+(3, 'AXKAMXKSA23', 'PROPLAYER', 'HONDA', 'CIVIC', '2020', '2022-03-24 07:52:34', NULL);
 
 --
 -- Índices para tablas volcadas
@@ -161,7 +161,7 @@ ALTER TABLE `unidades`
 -- AUTO_INCREMENT de la tabla `inspecciones_unidad`
 --
 ALTER TABLE `inspecciones_unidad`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `niveles_aceite`
